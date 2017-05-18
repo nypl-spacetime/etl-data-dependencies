@@ -18,6 +18,8 @@
   "author": "Bert Spaan",
   "license": "MIT",
   "dependencies": {
-    "@spacetime/orchestrator": "nypl-spacetime/orchestrator"
+    "@spacetime/orchestrator": "nypl-spacetime/orchestrator",
+    "cheerio": "^0.22.0",
+    "viz.js": "^1.7.1"
   }
 }
