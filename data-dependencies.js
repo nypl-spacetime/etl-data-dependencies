@@ -4,6 +4,8 @@ const Viz = require('viz.js')
 const cheerio = require('cheerio')
 const orchestrator = require('@spacetime/orchestrator')
 
+const filename = 'spacetime-graph'
+
 function aggregate (config, dirs, tools, callback) {
   const dot = orchestrator({
     useSteps: false
@@ -24,8 +26,8 @@ function aggregate (config, dirs, tools, callback) {
     return $(element).wrap(link)
   })
 
-  fs.writeFileSync(path.join(dirs.current, 'spacetime.dot'), dot)
-  fs.writeFileSync(path.join(dirs.current, 'spacetime.svg'), $.html())
+  fs.writeFileSync(path.join(dirs.current, `${filename}.dot`), dot)
+  fs.writeFileSync(path.join(dirs.current, `${filename}.svg`), $.html())
 
   callback()
 }
