@@ -1,0 +1,23 @@
+{
+  "name": "spacetime-etl-data-dependencies",
+  "version": "0.0.2",
+  "description": "Data Dependency Graph",
+  "main": "data-dependencies.js",
+  "devDependencies": {
+    "spacetime-generate-etl-readme": "~0.0.7",
+    "standard": "^6.0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/nypl-spacetime/etl-data-dependencies.git"
+  },
+  "scripts": {
+    "test": "standard",
+    "readme": "spacetime-generate-etl-readme ./ -o README.md"
+  },
+  "author": "Bert Spaan",
+  "license": "MIT",
+  "dependencies": {
+    "@spacetime/orchestrator": "nypl-spacetime/orchestrator"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "id": "data-dependencies",
+  "title": "Data Dependency Graph",
+  "license": "CC0",
+  "description": "Creates a graph of all ETL modules and their dependencies",
+  "author": "Bert Spaan"
+}
