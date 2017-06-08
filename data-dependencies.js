@@ -17,7 +17,13 @@ function aggregate (config, dirs, tools, callback) {
 
   const $ = cheerio.load(svg)
 
-  // Remove polygons with white backgroundf
+  // Somehow, Viz.js incorrectly sets the "viewbox" attribute,
+  //   while it should be "viewBox" (capital B)
+  $('svg')
+    .attr('viewBox', $('svg').attr('viewbox'))
+    .removeAttr('viewbox')
+
+  // Remove polygons with white background
   $('polygon[fill=#ffffff]').remove()
 
   $('.node').map((index, element) => {
