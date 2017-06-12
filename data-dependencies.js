@@ -8,7 +8,11 @@ const filename = 'spacetime-graph'
 
 function aggregate (config, dirs, tools, callback) {
   const dot = orchestrator({
-    useSteps: false
+    useSteps: false,
+    exclude: [
+      'data-dependencies',
+      'data-summary'
+    ]
   }).getDot()
 
   const svg = Viz(dot, {
