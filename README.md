@@ -28,8 +28,8 @@
 </tr>
 
 <tr>
-<td>Author</td>
-<td>Bert Spaan</td>
+<td>Homepage</td>
+<td><a href="http://spacetime.nypl.org/architecture/#datasets">http://spacetime.nypl.org/architecture/#datasets</a></td>
 </tr>
 </tbody>
 </table>

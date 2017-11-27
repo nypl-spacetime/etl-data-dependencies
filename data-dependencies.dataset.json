@@ -2,6 +2,18 @@
   "id": "data-dependencies",
   "title": "Data Dependency Graph",
   "license": "CC0",
-  "description": "Creates a graph of all ETL modules and their dependencies",
-  "author": "Bert Spaan"
+  "description": "Creates a graph of all ETL modules and their dependencies, and outputs this graph with all NYC Space/Time Directory data as one NDJSON file",
+  "homepage": "http://spacetime.nypl.org/architecture/#datasets",
+  "sources": [
+    {
+      "title": "All datasets in NYC Space/Time Directory",
+      "path": "http://spacetime.nypl.org/#data"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Bert Spaan",
+      "role": "author"
+    }
+  ]
 }
