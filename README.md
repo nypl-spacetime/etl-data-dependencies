@@ -1,6 +1,11 @@
 # NYC Space/Time Directory ETL module: Data Dependency Graph
 
-[ETL](https://en.wikipedia.org/wiki/Extract,_transform,_load) module for NYPL's [NYC Space/Time Direcory](http://spacetime.nypl.org/). This Node.js module downloads, parses, and/or transforms Data Dependency Graph data, and creates a NYC Space/Time Directory dataset.
+[ETL](https://en.wikipedia.org/wiki/Extract,_transform,_load) module for NYPL’s [NYC Space/Time Direcory](http://spacetime.nypl.org/). This Node.js module downloads, parses, and/or transforms Data Dependency Graph data, and creates a NYC Space/Time Directory dataset.
+
+
+## Data
+
+The dataset created by this ETL module’s `aggregate` step can be found in the [data section of the NYC Space/Time Directory website](http://spacetime.nypl.org/#data-data-dependencies).
 
 ## Details
 
@@ -19,12 +24,22 @@
 
 <tr>
 <td>Description</td>
-<td>Creates a graph of all ETL modules and their dependencies</td>
+<td>Creates a graph of all ETL modules and their dependencies, and outputs this graph with all NYC Space/Time Directory data as one NDJSON file</td>
 </tr>
 
 <tr>
 <td>License</td>
 <td>CC0</td>
+</tr>
+
+<tr>
+<td>Contributors</td>
+<td>Bert Spaan (author)</td>
+</tr>
+
+<tr>
+<td>Sources</td>
+<td><a href="http://spacetime.nypl.org/#data">All datasets in NYC Space/Time Directory</a></td>
 </tr>
 
 <tr>
